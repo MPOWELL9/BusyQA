@@ -1,3 +1,8 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -32,7 +37,7 @@ h1 {
 }
 p{font-family: 'Times New Roman', Times, serif;
 font-size: 10px;}
-h2{
+.h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 10px;
     display:inline;
