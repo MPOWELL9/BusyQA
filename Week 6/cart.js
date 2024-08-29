@@ -9,7 +9,7 @@ function Item(name, price) {
     this.price = price;
 }
 let item1 = new Item('Shirt', 20);
-let item2 = new Item('Shirt', 30);
+let item2 = new Item('Pants', 30);
 shoppingCart.addItem(item1);
 shoppingCart.addItem(item2);
 shoppingCart.removeItem = function(index){
@@ -26,6 +26,7 @@ shoppingCart.applyDiscountCode =function(code) {
     switch (code) {
         case 'SAVE10':
             return this.calculateTotal ()* 0.9;
+        case 'SAVE20':
             return this.calculateTotal ()* 0.8;
         default:
             return this.calculateTotal();
@@ -35,7 +36,8 @@ shoppingCart.applyDiscountCode =function(code) {
     return this.items.map(item => item.name);
 };
 console.log(shoppingCart.getCurrentItem());
-shoppingCart.removeItem(0);console.log(shoppingCart.getCurrentItem());
+shoppingCart.removeItem(0);
+console.log(shoppingCart.getCurrentItem());
 console.log(shoppingCart.calulateTotal());
 console.log(shoppingCart.applyDiscountCode('SAVE10'))
 
