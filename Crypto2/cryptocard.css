@@ -13,5 +13,22 @@ input, select {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 0.5rem;
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
+
+    box-shadow: 0 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
 }
+.app{
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    padding: 2rem;
+    text-align: center;
+}
+ .crypto-container {
+    justify-content: center ;
+    margin-top: 1rem
+
+ }
