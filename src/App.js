@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
-import Home from './Home.js';
-import About from './About.js';
-import Contact from './Contact.js';
+import Home from './component/Home';
+import About from './component/About';
+import Contact from './component/Contact';
 
 function App(){
   return(
@@ -22,3 +22,4 @@ function App(){
     </Router>
   );
 }
+export default App
